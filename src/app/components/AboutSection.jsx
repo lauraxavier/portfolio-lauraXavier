@@ -53,7 +53,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className="text-white flex justify-center items-center min-h-screen lg:pt-14"
+      className="flex justify-center items-center min-h-screen lg:pt-14"
       id="about"
     >
       <div className="md:grid md:grid-cols-2 gap-6 items-center xl:gap-16">

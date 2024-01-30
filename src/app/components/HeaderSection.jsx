@@ -43,7 +43,7 @@ const HeaderSection = () => {
           transition={{ duration: 0.8 }}
           className="col-span-12 sm:col-span-12 sm:text-center sm:justify-center order-2 md:order-1 sm:order-1 md:justify-center w-full"
         >
-          <h1 className="text-white mb-2 min-h-[270px] lg:min-h-[350px] text-[35px] sm:text-[50px] md:text-[40px] lg:text-[60px] lg:leading-normal font-extrabold">
+          <h1 className="mb-2 min-h-[270px] lg:min-h-[350px] text-[35px] sm:text-[50px] md:text-[40px] lg:text-[60px] lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Olá! Sua empresa está em busca de uma desenvolvedora Front End
             </span>
