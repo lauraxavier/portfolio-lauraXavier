@@ -24,11 +24,11 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Site - React/Nextjs - Laura Xavier",
+    description: "Portfólio",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/lauraxavier/portfolio-lauraXavier",
     previewUrl: "/",
   },
 ];
@@ -52,12 +52,18 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section
+      id="projects"
+      className="flex justify-center items-center min-h-screen lg:pt-14 flex-col"
+    >
+      <h2 className="text-center text-4xl font-bold mt-4 mb-14 md:mb-12">
         Meus Projetos
       </h2>
 
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul
+        ref={ref}
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12"
+      >
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

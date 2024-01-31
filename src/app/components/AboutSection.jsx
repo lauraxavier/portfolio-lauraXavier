@@ -58,7 +58,7 @@ const AboutSection = () => {
     >
       <div className="md:grid md:grid-cols-2 gap-6 items-center xl:gap-16">
         <motion.div
-          className="flex items-center justify-center"
+          className="flex items-center justify-center mb-10"
           variants={imageVariants}
           initial="initial"
           animate="animate"
@@ -67,7 +67,7 @@ const AboutSection = () => {
           <Image src="/images/profile.png" width={500} height={500} />
         </motion.div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">Sobre mim</h2>
+          <h2 className="text-4xl font-bold mb-4">Sobre mim</h2>
           <p className="text-base lg:text-lg">
             Oi, eu sou Laura, uma desenvolvedora Frontend com foco em React e
             habilidades sólidas em HTML, CSS e JavaScript.O que me destaca vai
@@ -101,7 +101,7 @@ const AboutSection = () => {
               initial="hidden"
               animate="visible"
               exit="hidden"
-              className="mt-8"
+              className="mt-8 min-h-[200px]"
             >
               {TAB_DATA.find((t) => t.id === tab).content}
             </motion.div>
