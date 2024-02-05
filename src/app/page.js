@@ -5,7 +5,7 @@ import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col dark:bg-zinc-950 dark:text-zinc-50">
+    <main className="flex min-h-screen flex-col">
       <Navbar />
       <div className="container mt-24 mx-auto px-10">
         <HeaderSection />

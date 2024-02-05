@@ -31,6 +31,22 @@ const projectsData = [
     gitUrl: "https://github.com/lauraxavier/portfolio-lauraXavier",
     previewUrl: "/",
   },
+  {
+    id: 4,
+    title: "Webapp - React - iList",
+    description: "WebApp do aplicativo iList",
+    image: "/images/projects/4.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+  },
+  {
+    id: 5,
+    title: "Site - Wordpress - Maiêutica",
+    description: "Site institucional",
+    image: "/images/projects/5.png",
+    tag: ["All", "Web"],
+    previewUrl: "https://www.maieutica.com.br/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -62,7 +78,7 @@ const ProjectsSection = () => {
 
       <ul
         ref={ref}
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12"
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20"
       >
         {filteredProjects.map((project, index) => (
           <motion.li
