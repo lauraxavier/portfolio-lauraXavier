@@ -28,12 +28,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed mx-auto shadow-lg top-0 left-0 right-0 z-10 bg-zinc-600 dark:bg-[#121212] bg-opacity-100">
+    <nav className="fixed mx-auto shadow-lg top-0 left-0 right-0 bg-[#121212] bg-opacity-100 z-50">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-3xl dark:text-zinc-50 text-zinc-100"
-        >
+        <Link href={"/"} className="text-2xl md:text-3xl text-zinc-50">
           LX
         </Link>
         <div className="mobile-menu block md:hidden">

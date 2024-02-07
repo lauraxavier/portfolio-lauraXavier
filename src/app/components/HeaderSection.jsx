@@ -43,7 +43,7 @@ const HeaderSection = () => {
           transition={{ duration: 0.8 }}
           className="col-span-12 sm:col-span-12 sm:text-center sm:justify-center order-2 md:order-1 sm:order-1 md:justify-center w-full min-h-[325px]"
         >
-          <h1 className="mb-2 min-h-[460px] lg:min-h-[360px] text-zinc-500 dark:text-zinc-100 text-[35px] sm:text-[50px] md:text-[40px] lg:text-[60px] lg:leading-normal font-extrabold">
+          <h1 className="mb-2 min-h-[460px] lg:min-h-[360px] text-zinc-100 text-[35px] sm:text-[50px] md:text-[40px] lg:text-[60px] lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Olá! Sua empresa está em busca de uma desenvolvedora Front End
             </span>
@@ -88,7 +88,7 @@ const HeaderSection = () => {
               height={800}
             />
           </div>
-          <div className="mb-3 lg:mb-0 justify-center items-center flex flex-col md:flex-row md:items-baseline lg:gap-4">
+          <div className="mb-3 lg:mb-0 justify-center items-center flex flex-col md:flex-row md:items-baseline md:gap-4 lg:gap-4">
             <motion.a
               href={size.width < 700 ? mobileWts : webWts}
               target="_blank"
@@ -113,7 +113,7 @@ const HeaderSection = () => {
               transition={{ duration: 0.5, type: "spring", stiffness: 150 }}
               target="_blank"
             >
-              <span className="block dark:bg-[#121212] dark:hover:bg-slate-800 rounded-full px-4 py-1">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-1">
                 Download CV
               </span>
             </motion.a>

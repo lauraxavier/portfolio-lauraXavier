@@ -10,7 +10,7 @@ const projectsData = [
     title: "Site usando React/Nextjs - Talita Rodrigues",
     description: "Site institucional",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["Todos", "React"],
     gitUrl: "https://github.com/lauraxavier/talita-rodrigues",
     previewUrl: "https://talitarodrigues.vercel.app/",
   },
@@ -19,7 +19,7 @@ const projectsData = [
     title: "WebApp - React/Nodejs - Events SaaS",
     description: "WebApp de eventos e palestras",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    tag: ["Todos", "React"],
     gitUrl: "https://github.com/lauraxavier/EventiFy-Front",
   },
   {
@@ -27,7 +27,7 @@ const projectsData = [
     title: "Site - React/Nextjs - Laura Xavier",
     description: "Portfólio",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    tag: ["Todos", "React"],
     gitUrl: "https://github.com/lauraxavier/portfolio-lauraXavier",
     previewUrl: "/",
   },
@@ -36,7 +36,7 @@ const projectsData = [
     title: "Webapp - React - iList",
     description: "WebApp do aplicativo iList",
     image: "/images/projects/4.png",
-    tag: ["All", "Web"],
+    tag: ["Todos", "React"],
     gitUrl: "/",
   },
   {
@@ -44,13 +44,21 @@ const projectsData = [
     title: "Site - Wordpress - Maiêutica",
     description: "Site institucional",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    tag: ["Todos"],
     previewUrl: "https://www.maieutica.com.br/",
+  },
+  {
+    id: 6,
+    title: "Site - Wordpress - Resgatah",
+    description: "Site institucional",
+    image: "/images/projects/6.png",
+    tag: ["Todos"],
+    previewUrl: "https://resgatah.com.br",
   },
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Todos");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -75,7 +83,18 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold mt-4 mb-14 md:mb-12">
         Meus Projetos
       </h2>
-
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-3">
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Todos"
+          isSelected={tag === "Todos"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="React"
+          isSelected={tag === "React"}
+        />
+      </div>
       <ul
         ref={ref}
         className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20"
