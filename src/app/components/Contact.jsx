@@ -44,7 +44,7 @@ const Contact = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 min-h-screen justify-center items-center"
     >
       <div className="z-10">
-        <h5 className="text-xl font-bold my-2">Quer saber mais de mim ?</h5>
+        <h5 className="text-xl font-bold my-2">Quer saber mais sobre mim ?</h5>
         <p className="mb-4 max-w-md">
           Estou sempre pronta para novas oportunidades! Seja para fazer uma
           pergunta, trocar ideias ou simplesmente dizer sua opinião. Vamos
