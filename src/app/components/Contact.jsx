@@ -51,19 +51,21 @@ const Contact = () => {
           conversar!
         </p>
         <div className="socials flex flex-row gap-4 mt-6">
-          <Link href="https://github.com/lauraxavier" target="_blank">
+          <Link href="https://www.github.com/lauraxavier" target="_blank">
             <motion.div
               whileHover={{
                 rotate: [0, -10, 10, -10, 0],
                 transition: { duration: 0.5 },
               }}
             >
-              <Image
-                src="/images/github.png "
-                width={50}
-                height={50}
-                alt="Github Icon"
-              />
+              <div className="text-zinc-100">
+                <Image
+                  src="/images/github.png"
+                  width={50}
+                  height={50}
+                  alt="Github Icon"
+                />
+              </div>
             </motion.div>
           </Link>
           <Link
