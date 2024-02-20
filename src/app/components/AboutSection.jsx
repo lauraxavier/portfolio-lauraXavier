@@ -69,13 +69,14 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">Sobre mim</h2>
           <p className="text-base lg:text-lg">
-            Oi, eu sou Laura, uma desenvolvedora Frontend com foco em React e
-            habilidades sólidas em HTML, CSS e JavaScript.O que me destaca vai
-            além do código. Sou ótima em colaboração e comunicação, acredito que
-            a troca de ideias é fundamental. Cuidadosa com detalhes de design,
-            estou sempre disposta a aprender e aprimorar minhas habilidades.
-            Explore meu portfólio e veja como aplico essas habilidades em cada
-            projeto. Estou pronta para novos desafios e para contribuir
+            Olá, sou Laura, uma desenvolvedora Frontend com foco em React e
+            habilidades sólidas em HTML, CSS e JavaScript. Além das minhas
+            habilidades técnicas, destaco-me pela minha capacidade excepcional
+            de colaboração e comunicação, reconhecendo o valor da troca de
+            ideias no desenvolvimento de projetos. Sou atenta aos detalhes de
+            design e estou sempre buscando aprender e me aprimorar, tanto em
+            questões técnicas quanto em novos conceitos de arquitetura e
+            FrontEnd. Estou pronta para novos desafios e para contribuir
             positivamente em equipes colaborativas.
           </p>
           <div className="flex flex-row justify-start mt-8 min-h-14">

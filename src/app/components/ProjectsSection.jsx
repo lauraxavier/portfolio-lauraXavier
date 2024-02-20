@@ -11,7 +11,6 @@ const projectsData = [
     description: "Site institucional",
     image: "/images/projects/1.png",
     tag: ["Todos", "React"],
-    gitUrl: "https://github.com/lauraxavier/talita-rodrigues",
     previewUrl: "https://talitarodrigues.vercel.app/",
   },
   {
@@ -37,7 +36,6 @@ const projectsData = [
     description: "WebApp do aplicativo iList",
     image: "/images/projects/4.png",
     tag: ["Todos", "React"],
-    gitUrl: "/",
   },
   {
     id: 5,

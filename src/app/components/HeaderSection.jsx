@@ -62,7 +62,7 @@ const HeaderSection = () => {
                 2000,
                 "Disposta á aprender sempre.",
                 2000,
-                "Cuidadosa com detalhes de designs.",
+                "Cuidadosa com detalhes de design.",
                 2000,
                 "Com capacidade de gerenciar o tempo .",
                 2000,
@@ -103,7 +103,7 @@ const HeaderSection = () => {
               Fale comigo
             </motion.a>
             <motion.a
-              href="/"
+              href="https://drive.google.com/file/d/14CBT1fFYJYMXwTJghZKVvu8G4H5DjhwJ/view?usp=drive_link"
               className="px-1 inline-block py-1 w-full max-w-[210px] sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white mt-3"
               whileHover={{
                 scale: 1.2,
@@ -114,7 +114,7 @@ const HeaderSection = () => {
               target="_blank"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-1">
-                Download CV
+                Currículo
               </span>
             </motion.a>
           </div>
