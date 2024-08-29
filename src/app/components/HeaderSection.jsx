@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const mobileWts = "https://wa.me/5548991574820";
 const webWts = "https://web.whatsapp.com/send?phone=+555548991574820";
@@ -113,7 +112,7 @@ const HeaderSection = () => {
               transition={{ duration: 0.5, type: "spring", stiffness: 150 }}
               target="_blank"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-1">
+              <span className="block bg-[#121212] text-center hover:bg-slate-800 rounded-full px-4 py-1">
                 Currículo
               </span>
             </motion.a>
