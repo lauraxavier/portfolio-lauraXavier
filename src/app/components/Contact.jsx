@@ -12,14 +12,38 @@ const Contact = () => {
         subject: "",
         message: "",
     });
+    const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const validateForm = () => {
+        const newErrors = {};
+        if (!formValues.name) newErrors.name = "Nome é obrigatório";
+        if (!formValues.email) {
+            newErrors.email = "Email é obrigatório";
+        } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
+            newErrors.email = "Email inválido";
+        }
+        if (!formValues.subject) newErrors.subject = "Assunto é obrigatório";
+        if (!formValues.message) newErrors.message = "Mensagem é obrigatória";
+        return newErrors;
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const formErrors = validateForm();
+        if (Object.keys(formErrors).length > 0) {
+            setErrors(formErrors);
+            return;
+        }
+
+        setIsSubmitting(true);
+        setErrors({});
+
         const data = {
-            name: e.target.name.value,
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value,
+            name: formValues.name,
+            email: formValues.email,
+            subject: formValues.subject,
+            message: formValues.message,
         };
 
         const JSONdata = JSON.stringify(data);
@@ -37,7 +61,6 @@ const Contact = () => {
         const resData = await response.json();
 
         if (response.status === 200) {
-            console.log("Message sent.");
             setEmailSubmitted(true);
             setFormValues({
                 name: "",
@@ -49,8 +72,12 @@ const Contact = () => {
                 setEmailSubmitted(false);
             }, 2000);
         } else {
-            console.error("Failed to send message. Status:", response.status);
+            console.error(
+                "Falha ao enviar a mensagem. Status:",
+                response.status
+            );
         }
+        setIsSubmitting(false);
     };
 
     return (
@@ -60,7 +87,7 @@ const Contact = () => {
         >
             <div className="z-10">
                 <h5 className="text-xl font-bold my-2">
-                    Quer saber mais sobre mim ?
+                    Quer saber mais sobre mim?
                 </h5>
                 <p className="mb-4 max-w-md">
                     Estou sempre pronta para novas oportunidades! Seja para
@@ -111,7 +138,11 @@ const Contact = () => {
                 </div>
             </div>
             <div>
-                <form className="flex flex-col mt-10" onSubmit={handleSubmit}>
+                <form
+                    className="flex flex-col mt-10"
+                    onSubmit={handleSubmit}
+                    noValidate
+                >
                     <div className="mb-6">
                         <label
                             htmlFor="name"
@@ -134,6 +165,11 @@ const Contact = () => {
                             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Me chamo"
                         />
+                        {errors.name && (
+                            <p className="text-red-500 text-sm mt-1">
+                                {errors.name}
+                            </p>
+                        )}
                     </div>
                     <div className="mb-6">
                         <label
@@ -157,11 +193,16 @@ const Contact = () => {
                             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="seu-email@gmail.com"
                         />
+                        {errors.email && (
+                            <p className="text-red-500 text-sm mt-1">
+                                {errors.email}
+                            </p>
+                        )}
                     </div>
                     <div className="mb-6">
                         <label
                             htmlFor="subject"
-                            className=" block text-sm mb-2 font-medium"
+                            className="block mb-2 text-sm font-medium"
                         >
                             Assunto
                         </label>
@@ -180,11 +221,16 @@ const Contact = () => {
                             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Apenas dizendo oi!"
                         />
+                        {errors.subject && (
+                            <p className="text-red-500 text-sm mt-1">
+                                {errors.subject}
+                            </p>
+                        )}
                     </div>
                     <div className="mb-6">
                         <label
                             htmlFor="message"
-                            className=" block text-sm mb-2 font-medium"
+                            className="block mb-2 text-sm font-medium"
                         >
                             Mensagem
                         </label>
@@ -201,14 +247,24 @@ const Contact = () => {
                             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 h-[180px]"
                             placeholder="Vamos falar sobre..."
                         />
+                        {errors.message && (
+                            <p className="text-red-500 text-sm mt-1">
+                                {errors.message}
+                            </p>
+                        )}
                     </div>
                     <button
                         type="submit"
-                        className="bg-primary-500 hover:bg-primary-600  font-medium py-2.5 px-5 rounded-lg w-full"
+                        disabled={isSubmitting}
+                        className={`${
+                            isSubmitting
+                                ? "bg-gray-500"
+                                : "bg-primary-500 hover:bg-primary-600"
+                        } font-medium py-2.5 px-5 rounded-lg w-full`}
                     >
-                        Enviar mensagem
+                        {isSubmitting ? "Enviando..." : "Enviar mensagem"}{" "}
                     </button>
-                    {emailSubmitted ? (
+                    {emailSubmitted && (
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -218,7 +274,7 @@ const Contact = () => {
                         >
                             Mensagem enviada com sucesso!
                         </motion.div>
-                    ) : null}
+                    )}
                 </form>
             </div>
         </section>
