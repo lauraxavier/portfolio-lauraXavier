@@ -25,14 +25,6 @@ const projectsData = [
     },
     {
         id: 3,
-        title: "Site usando React/Nextjs - Talita Rodrigues",
-        description: "Site institucional",
-        image: "/images/projects/1.png",
-        tag: ["Todos", "React"],
-        previewUrl: "https://talitarodrigues.vercel.app/",
-    },
-    {
-        id: 4,
         title: "WebApp - React/Nodejs - Events SaaS",
         description: "WebApp de eventos e palestras",
         image: "/images/projects/2.png",
@@ -40,14 +32,14 @@ const projectsData = [
         gitUrl: "https://github.com/lauraxavier/EventiFy-Front",
     },
     {
-        id: 5,
+        id: 4,
         title: "Webapp - React - iList",
         description: "WebApp do aplicativo iList",
         image: "/images/projects/4.png",
         tag: ["Todos", "React"],
     },
     {
-        id: 6,
+        id: 5,
         title: "Site - Wordpress - Maiêutica",
         description: "Site institucional",
         image: "/images/projects/5.png",
@@ -55,7 +47,7 @@ const projectsData = [
         previewUrl: "https://www.maieutica.com.br/",
     },
     {
-        id: 7,
+        id: 6,
         title: "Site - Wordpress - Resgatah",
         description: "Site institucional",
         image: "/images/projects/6.png",
