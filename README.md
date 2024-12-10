@@ -1,37 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio - Laura Xavier
 
-## Getting Started
+Bem-vindo ao meu portfólio! Aqui você pode conhecer um pouco mais sobre mim e os projetos que desenvolvi ao longo da minha carreira como desenvolvedora Front-End.
 
-First, run the development server:
+## Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este portfólio foi construído com o intuito de apresentar meus conhecimentos e projetos utilizando as mais modernas tecnologias de desenvolvimento web. Ele foi criado com **Next.js** e outras ferramentas que fazem parte do meu fluxo de trabalho.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-   **React**: Framework para construção de interfaces dinâmicas e responsivas.
+-   **Next.js**: Framework para renderização do lado do servidor (SSR) e geração de sites estáticos.
+-   **Tailwind CSS**: Framework utilitário para estilização rápida e flexível.
+-   **Framer Motion**: Biblioteca para animações e transições.
+-   **Node.js**: Ambiente de execução JavaScript no servidor.
+-   **Nodemailer**: Biblioteca para envio de e-mails, usada no sistema de contato do portfólio.
+-   **Vercel**: Plataforma de deploy para hospedar e publicar o projeto.
+-   **Git**: Controle de versão para gerenciamento e colaboração no código.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Acesse Meu Portfólio
 
-## Learn More
+Você pode acessar o meu portfólio diretamente clicando no link abaixo:
 
-To learn more about Next.js, take a look at the following resources:
+[**Portfólio Laura Xavier**](https://laura-xavier.vercel.app)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contato
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Se você estiver interessado em trabalhar comigo ou tiver alguma dúvida sobre meus projetos, entre em contato através dos meios abaixo:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# portfolio-lauraXavier
+-   **Email**: [laura.ac.xavier@gmail.com](mailto:laura.ac.xavier@gmail.com)
+-   **LinkedIn**: [laura-xavier](https://www.linkedin.com/in/laura-xavier-75b9a0243/)
+-   **GitHub**: [lauraxavier](https://github.com/lauraxavier)
