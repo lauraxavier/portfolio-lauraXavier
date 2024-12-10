@@ -107,7 +107,7 @@ const HeaderSection = () => {
                             Fale comigo
                         </motion.a>
                         <motion.a
-                            href="https://drive.google.com/file/d/124t0PYuJ8GdLsI0uM9FJJ4QFW8OFZoWO/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1hPVEKiiQcTeRzHvvkFJN3JR_S-8l3mnm/view?usp=sharing"
                             className="px-1 inline-block py-1 w-full max-w-[210px] sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white mt-3"
                             whileHover={{
                                 scale: 1.2,
