@@ -272,7 +272,7 @@ const Contact = () => {
                             transition={{ duration: 0.5 }}
                             className="bg-green-100 mt-3 text-green-700 p-2 rounded-md mb-4 justify-center flex text-center"
                         >
-                            Mensagem enviada com sucesso!
+                            Sua mensagem foi enviada com sucesso!
                         </motion.div>
                     )}
                 </form>
