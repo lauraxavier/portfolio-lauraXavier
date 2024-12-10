@@ -8,7 +8,7 @@ Este portfólio foi construído com o intuito de apresentar meus conhecimentos e
 
 ## Tecnologias Utilizadas
 
--   **React**: Framework para construção de interfaces dinâmicas e responsivas.
+-   **React**: Biblioteca para construção de interfaces dinâmicas e responsivas.
 -   **Next.js**: Framework para renderização do lado do servidor (SSR) e geração de sites estáticos.
 -   **Tailwind CSS**: Framework utilitário para estilização rápida e flexível.
 -   **Framer Motion**: Biblioteca para animações e transições.
