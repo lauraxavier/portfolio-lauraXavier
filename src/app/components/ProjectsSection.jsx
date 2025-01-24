@@ -77,7 +77,7 @@ const ProjectsSection = () => {
     return (
         <section
             id="projects"
-            className="flex justify-center items-center min-h-screen lg:pt-14 flex-col"
+            className="flex justify-center items-center min-h-screen lg:pt-14 flex-col lg:mt-15 mt-[90px]"
         >
             <h2 className="text-center text-4xl font-bold mt-4 mb-14 md:mb-12">
                 Meus Projetos
