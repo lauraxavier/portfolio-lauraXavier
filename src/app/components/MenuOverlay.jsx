@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const MenuOverlay = ({ links, onClick }) => {
     return (
         <motion.ul
-            className="flex flex-col py-4 items-center bg-[#121212]"
+            className="flex flex-col py-4 items-center bg-[#121212e5] mt-[-2px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}

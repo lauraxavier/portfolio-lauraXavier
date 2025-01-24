@@ -100,7 +100,7 @@ const Contact = () => {
                         target="_blank"
                     >
                         <motion.div
-                            whileHover={{
+                            whilehover={{
                                 rotate: [0, -10, 10, -10, 0],
                                 transition: { duration: 0.5 },
                             }}
@@ -120,7 +120,7 @@ const Contact = () => {
                         target="_blank"
                     >
                         <motion.div
-                            whileHover={{
+                            whilehover={{
                                 rotate: [0, -10, 10, -10, 0],
                                 transition: { duration: 0.5 },
                             }}
