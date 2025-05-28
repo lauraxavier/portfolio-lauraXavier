@@ -12,6 +12,11 @@ const Contact = () => {
         subject: "",
         message: "",
     });
+    const [theme, setTheme] = useState("dark");
+
+    const toggleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
+    };
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
 

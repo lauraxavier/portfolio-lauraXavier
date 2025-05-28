@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap");
 
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Montserrat", sans-serif;
+    @apply bg-white text-black;
+}
+
+.dark body {
+    @apply bg-zinc-950 text-white;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -24,4 +30,33 @@ body {
 .scroll-container::-webkit-scrollbar-track {
     background: #2d2d2d;
     border-radius: 10px;
+}
+
+.neon-text {
+    color: #ff00cc;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc, 0 0 20px #ff00cc,
+        0 0 40px #ff00cc, 0 0 80px #ff00cc;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc, 0 0 20px #ff00cc,
+            0 0 40px #ff00cc, 0 0 80px #ff00cc;
+    }
+    to {
+        text-shadow: 0 0 10px #ff33dd, 0 0 20px #ff33dd, 0 0 30px #ff33dd,
+            0 0 50px #ff33dd, 0 0 100px #ff33dd;
+    }
+}
+
+.text-neon {
+    color: #c770f0;
+    text-shadow: 0 0 5px #c770f0, 0 0 10px #c770f0, 0 0 20px #c770f0;
+}
+
+.light .text-neon {
+    color: #361483;
+    text-shadow: 0 0 5px #361483, 0 0 10px #361483, 0 0 20px #c770f0;
 }

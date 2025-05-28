@@ -36,7 +36,7 @@ const AboutSection = () => {
     };
 
     const cardClasses =
-        "bg-[#3b3b3b] shadow-lg rounded-lg p-6 transition-all duration-300 hover:shadow-[0_0_20px_4px_rgba(128,90,213,0.8)] cursor-pointer";
+        "bg-white dark:bg-[#3b3b3b] text-gray-800 dark:text-white shadow-lg rounded-lg p-6 transition-all duration-300 hover:shadow-[0_0_20px_4px_rgba(128,90,213,0.8)] cursor-pointer";
 
     const cardVariants = {
         hidden: { opacity: 0, y: 50 },
@@ -63,14 +63,43 @@ const AboutSection = () => {
                     />
                 </motion.div>
                 <div className="text-left flex flex-col space-y-4">
-                    <h2 className="text-3xl font-bold">Sobre mim</h2>
-                    <p className="text-base text-white leading-relaxed">
-                        Olá, sou Laura, uma desenvolvedora Frontend com foco em
-                        React e habilidades sólidas em HTML, CSS e JavaScript.
-                        Além das minhas habilidades técnicas, destaco-me pela
-                        minha capacidade excepcional de colaboração e
-                        comunicação, reconhecendo o valor da troca de ideias no
-                        desenvolvimento de projetos.
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                        Sobre mim
+                    </h2>
+                    <p className="text-base text-gray-800 dark:text-white leading-relaxed">
+                        Oi! Eu sou a Laura — desenvolvedora front-end com foco
+                        em React. Aqui em casa, programar é quase um esporte em
+                        família: meu marido é dev sênior, meu filho de 12 anos
+                        já coda e até minha filha de 8 está indo pelo mesmo
+                        caminho, rs.
+                        <br />
+                        <br />
+                        Foi nesse ambiente criativo que comecei minha jornada na
+                        tecnologia, participando de projetos freelancers com meu
+                        marido, aprendendo na prática, errando, refatorando e
+                        crescendo.
+                        <br />
+                        <br />
+                        Antes do mundo tech, trabalhei no comércio desde os 13
+                        anos e também fui maquiadora — o que me ensinou muito
+                        sobre lidar com pessoas, entender necessidades e, claro,
+                        ter um bom olhar para detalhes (o que ajuda bastante com
+                        CSS!).
+                        <br />
+                        <br />
+                        Hoje, além das minhas habilidades em HTML, CSS,
+                        JavaScript e React, tenho uma forte capacidade de
+                        colaboração, comunicação e adaptabilidade.
+                        <br />
+                        <br />
+                        Acredito que o bom código vai além da tela: ele nasce de
+                        boas conversas, de times que se escutam e de pessoas que
+                        gostam de construir juntas.
+                        <br />
+                        <br />
+                        Se você procura alguém que une bagagem de vida,
+                        curiosidade infinita e uma pitada de bom humor, bora
+                        conversar?
                     </p>
                 </div>
             </div>
@@ -107,7 +136,7 @@ const AboutSection = () => {
                                     className={`${cardClasses} flex flex-col items-center justify-center text-center space-y-4`}
                                     variants={cardVariants}
                                 >
-                                    <span className="text-4xl text-blue-500">
+                                    <span className="text-4xl text-blue-500 dark:text-purple-400">
                                         {skill.icon}
                                     </span>
                                     <span className="font-medium text-lg">
@@ -125,7 +154,7 @@ const AboutSection = () => {
                                     <h3 className="font-bold text-lg">
                                         React, Node.js
                                     </h3>
-                                    <p className="text-gray-300">
+                                    <p className="text-gray-700 dark:text-gray-300">
                                         640 horas pela SoulCode Academy
                                     </p>
                                 </motion.div>
@@ -136,7 +165,7 @@ const AboutSection = () => {
                                     <h3 className="font-bold text-lg">
                                         Web Front-End Fundamentos
                                     </h3>
-                                    <p className="text-gray-300">
+                                    <p className="text-gray-700 dark:text-gray-300">
                                         HTML, CSS e JS - Udemy
                                     </p>
                                 </motion.div>
