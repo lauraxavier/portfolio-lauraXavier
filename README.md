@@ -2,7 +2,7 @@
 
 ## Visual do Portfólio
 
-![Imagem do site](https://laura-xavier.vercel.app/images/fullPage.png)
+![Imagem do site](./assets/fullPage.png)
 
 Bem-vindo ao meu portfólio! Aqui você pode conhecer um pouco mais sobre mim e os projetos que desenvolvi ao longo da minha carreira como desenvolvedora Front-End.
 
