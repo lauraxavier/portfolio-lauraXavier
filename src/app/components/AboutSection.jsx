@@ -66,7 +66,7 @@ const AboutSection = () => {
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
                         Sobre mim
                     </h2>
-                    <p className="text-base text-gray-800 dark:text-white leading-relaxed">
+                    <p className="text-base text-gray-800 dark:text-white leading-relaxed font-bold">
                         Oi! Eu sou a Laura — desenvolvedora front-end com foco
                         em React. Aqui em casa, programar é quase um esporte em
                         família: meu marido é dev sênior, meu filho de 12 anos

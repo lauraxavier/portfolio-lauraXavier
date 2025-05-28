@@ -40,14 +40,14 @@ const HeaderSection = () => {
         <section className="min-h-screen flex justify-center items-center relative overflow-hidden">
             <BackgroundNetwork />
 
-            <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 w-full max-w-7xl px-4 relative z-10">
+            <div className="flex flex-col-reverse sm:grid sm:grid-cols-12 gap-8 w-full max-w-7xl px-4 relative z-10 mt-[-130px] sm:mt-0">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     className="col-span-12 sm:col-span-7 flex flex-col justify-center text-white"
                 >
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4 text-black dark:text-white">
+                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-black dark:text-white break-words">
                         Oi, me chamo{" "}
                         <span className="text-[#361483] dark:text-cyan-400 font-bold">
                             Laura
