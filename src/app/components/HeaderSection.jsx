@@ -7,7 +7,7 @@ import BackgroundNetwork from "./BackgroundNetwork";
 import useWindowSize from "@/hooks/useWindowSize";
 
 const mobileWhatsAppLink = "https://wa.me/5548991574820";
-const webWhatsAppLink = "https://web.whatsapp.com/send?phone=+555548991574820";
+const webWhatsAppLink = "https://web.whatsapp.com/send?phone=+5548991574820";
 
 const HeaderSection = () => {
     const size = useWindowSize();
@@ -18,6 +18,21 @@ const HeaderSection = () => {
     const rotateX = useTransform(mouseY, [0, size.height || 1], [15, -15]);
     const rotateY = useTransform(mouseX, [0, size.width || 1], [-15, 15]);
 
+    const [whatsAppLink, setWhatsAppLink] = useState(mobileWhatsAppLink);
+
+    useEffect(() => {
+        mouseX.set((size.width || 0) / 2);
+        mouseY.set((size.height || 0) / 2);
+    }, [size.width, size.height]);
+
+    useEffect(() => {
+        const isMobile =
+            /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+                navigator.userAgent
+            );
+        setWhatsAppLink(isMobile ? mobileWhatsAppLink : webWhatsAppLink);
+    }, []);
+
     const handleMouseMove = (e) => {
         mouseX.set(e.clientX);
         mouseY.set(e.clientY);
@@ -27,14 +42,6 @@ const HeaderSection = () => {
         mouseX.set((size.width || 0) / 2);
         mouseY.set((size.height || 0) / 2);
     };
-
-    useEffect(() => {
-        mouseX.set((size.width || 0) / 2);
-        mouseY.set((size.height || 0) / 2);
-    }, [size.width, size.height]);
-
-    const getWhatsAppLink = () =>
-        size.width < 700 ? mobileWhatsAppLink : webWhatsAppLink;
 
     return (
         <section className="min-h-screen flex justify-center items-center relative overflow-hidden">
@@ -57,6 +64,7 @@ const HeaderSection = () => {
                     <h2 className="text-2xl md:text-3xl font-medium mb-2 text-black dark:text-white">
                         Sou desenvolvedora Front-End
                     </h2>
+
                     <TypeAnimation
                         sequence={[
                             "Com experiência em React e React Native.",
@@ -80,7 +88,7 @@ const HeaderSection = () => {
 
                     <div className="flex gap-4 mt-8">
                         <motion.a
-                            href={getWhatsAppLink()}
+                            href={whatsAppLink}
                             target="_blank"
                             className="px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-[#361483] hover:bg-[#2a0f6b] dark:bg-gradient-to-r dark:from-teal-500 dark:to-blue-500 text-white text-sm sm:text-base font-medium shadow-lg hover:shadow-xl"
                             whileHover={{

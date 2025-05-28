@@ -21,13 +21,13 @@ const BackToTopButton = () => {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed bottom-5 right-5 z-50 p-3 rounded-full 
-            bg-purple-600 text-white shadow-2xl shadow-purple-500/40 transition-all duration-300 
-            hover:bg-purple-700 ${
-                showBackToTop
-                    ? "opacity-100 scale-100"
-                    : "opacity-0 scale-90 pointer-events-none"
-            }`}
+            className={`fixed bottom-20 right-5 z-50 p-3 rounded-full 
+    bg-purple-600 text-white shadow-2xl shadow-purple-500/40 transition-all duration-300 
+    hover:bg-purple-700 ${
+        showBackToTop
+            ? "opacity-100 scale-100"
+            : "opacity-0 scale-90 pointer-events-none"
+    }`}
             aria-label="Voltar ao topo"
         >
             <ArrowUp className="w-5 h-5" />

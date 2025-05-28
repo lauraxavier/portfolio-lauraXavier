@@ -50,18 +50,26 @@ const AboutSection = () => {
         >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-6xl">
                 <motion.div
-                    className="flex items-center justify-center mb-6 md:mb-0"
+                    className="flex items-center justify-center mb-6 md:mb-0 perspective-3d group"
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <Image
-                        src="/images/profile.png"
-                        width={400}
-                        height={400}
-                        alt="Laura Xavier"
-                    />
+                    <motion.div
+                        className="rounded-xl shadow-[0_0_20px_rgba(128,90,213,0.3)] transition-transform duration-500 group-hover:rotate-[2deg] group-hover:scale-105"
+                        whileHover={{ rotateY: 5, rotateX: 2 }}
+                        transition={{ type: "spring", stiffness: 120 }}
+                    >
+                        <Image
+                            src="/images/familyDev.png"
+                            width={400}
+                            height={400}
+                            alt="Laura Xavier e família"
+                            className="rounded-xl object-cover"
+                        />
+                    </motion.div>
                 </motion.div>
+
                 <div className="text-left flex flex-col space-y-4">
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
                         Sobre mim
